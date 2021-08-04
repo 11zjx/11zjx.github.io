@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 定义一个版心类 */
+        .w{
+            width: 1000px;
+            margin:0 auto;
+        }
+        .header{
+            background: red;
+            height: 80px;
+            line-height: 80px;
+        }
+        .nav{
+            background: orange;
+            height: 150px;
+        }
+        .banner{
+            background: skyblue;
+            height: 500px;
+        }
+        .main{
+            background: green;
+            height: 800px;
+        }
+        .footer{
+            background: gray;
+            height: 200px;
+            line-height: 200px;
+        }
+        div{
+            margin-bottom: 50px !important;
+        }
+        .sidebar{
+            position: absolute;
+            right: 415px;
+            top: 360px;
+            background: pink;
+            width: 16px;
+            padding: 10px;
+            height: 83px;
+        }
+        .sidebar a{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="w">header</div>
+    </div>
+    
+    <div class="nav w">nav</div>
+    <div class="banner w">banner</div>
+    <div class="main w">main</div>
+
+    <div class="footer">
+        <div class="w">footer</div>
+    </div>
+
+    <!-- 侧边栏 -->
+    <p class="sidebar"><a href="javascript:">返回顶部</a></p>
+
+    <script>
+        // 获取dom对象
+        var header = document.querySelector(".header");
+        var nav = document.querySelector(".nav");
+        var banner = document.querySelector(".banner");
+        var main = document.querySelector(".main");
+        var sidebar = document.querySelector(".sidebar");
+        var a = document.querySelector("a");
+        // 测试值
+        console.log(header.offsetHeight);
+        console.log(nav.offsetHeight);
+        console.log( sidebar.offsetHeight );
+        console.log(banner.offsetHeight -sidebar.offsetHeight);
+        console.log(sidebar.offsetTop -banner.offsetTop );
+
+        // var一个变量，把sidebar.offsetTop -banner.offsetTop的值存起来，这就是侧边栏滚动到banner时的top
+        var sidebartop = sidebar.offsetTop -banner.offsetTop;
+        
+        window.onscroll = function(){
+            // 判断页面滚动距离，大于或者等于header.offsetHeight+50+nav.offsetHeight+50的值的时候，侧边栏变固定定位
+            if(window.pageYOffset >= header.offsetHeight+50+nav.offsetHeight+50){
+                sidebar.style.position = "fixed";
+                sidebar.style.top =sidebartop+"px";
+            }else{ //小于变absolute
+                sidebar.style.position = "absolute";
+                sidebar.style.top = 360+"px";
+            }
+             //判断页面滚动距离，大于或者等于header.offsetHeight+50+nav.offsetHeight+50+ banner.offsetHeight+50的值的时候，a标签block
+            if(window.pageYOffset >= header.offsetHeight+50+nav.offsetHeight+50+ banner.offsetHeight+50 ){
+                a.style.display = "block";
+            }else{//否则none
+                a.style.display = "none";
+            }
+        }
+        
+        function getScroll(){
+            return {
+                left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+                top : window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+            }
+        }
+        var timer = null;
+        a.onclick = function(){
+            if(timer === null){
+                timer = window.setInterval(function(){
+                    var currentPageTop = getScroll().top;
+                    if(currentPageTop <= 0){
+                        window.clearInterval(timer);
+                        timer = null;
+                    }
+                    var pos = currentPageTop - 100;
+
+                    window.scroll(0 ,pos);
+                },15)
+            }
+        }
+        // a.onclick = function(){
+        //     window.scroll(0 ,0);
+        // }
+    </script>
+</body>
+</html>

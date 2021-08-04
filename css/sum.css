@@ -1,0 +1,109 @@
+body {
+    background-color: #F4C042;
+  }
+  body .box {
+    width: 300px;
+    height: 300px;
+    margin: 300px auto 0;
+    background: url(https://www.17sucai.com/preview/1596970/2020-07-24/sunloader/img/1.png) no-repeat bottom;
+    position: relative;
+  }
+  body .box .xbox {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 135px;
+    z-index: -1;
+    animation: xxx 3s infinite linear;
+  }
+  @keyframes xxx {
+    0% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-25px);
+    }
+    80% {
+      transform: translateY(-25px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  body .box .xbox .bodys {
+    animation: yyy 3s infinite linear;
+  }
+  @keyframes yyy {
+    0% {
+      transform: rotate(0);
+    }
+    30% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    70% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  body .box .xbox .eye {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    animation: eee 3s infinite linear;
+  }
+  @keyframes eee {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(0px) scale(1, 1);
+    }
+    55% {
+      transform: translateX(0px) scale(1, 0.1);
+    }
+    60% {
+      transform: translateX(0px) scale(1);
+    }
+    70% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(30px);
+    }
+  }
+  body .box p {
+    font-size: 30px;
+    width: 136px;
+    position: absolute;
+    top: 190px;
+    left: 30%;
+    text-align: center;
+    color: #7a5600;
+    animation: zzz 3s infinite linear;
+  }
+  @keyframes zzz {
+    0% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /*# sourceMappingURL=./style.css.map */

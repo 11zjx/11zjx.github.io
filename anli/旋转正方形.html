@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        	* {
+			margin: 0;
+			padding: 0
+		}
+        ul,ol,li{
+			list-style: none;
+
+        }
+
+		ul {
+			transform-style: preserve-3d;
+			width: 200px;
+			height: 200px;
+			position: relative;
+			margin: 150px 150px;
+            animation: xx 15s infinite linear;
+			
+		}
+
+		ul:hover {
+            /* animation-play-state 属性规定动画正在运行还是暂停。 */
+			animation-play-state: paused;
+		}
+
+		li {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 200px;
+			height: 200px;
+			background: skyblue;
+			opacity: 0.9;
+            border: slategray 1px solid;
+		}
+
+		li:hover {
+			opacity: 1;
+		}
+
+		img {
+			width: 200px;
+			height: 200px;
+		}
+
+		.top {
+			transform: rotateX(90deg) translateZ(100px);
+		}
+
+		.bottom {
+			transform: rotateX(90deg) translateZ(-100px);
+		}
+
+		.left {
+			transform: rotateY(90deg) translateZ(100px);
+		}
+
+		.right {
+			transform: rotateY(90deg) translateZ(-100px);
+		}
+
+		.front {
+			transform: translateZ(100px);
+		}
+
+		.back {
+			transform: translateZ(-100px);
+		}
+
+		@keyframes xx {
+			form {
+				transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			}
+
+			to {
+				transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+			}
+		}
+    </style>
+</head>
+<body>
+    <ul>
+		<li class="top"><img src="http://n.sinaimg.cn/sinakd20200628ac/252/w548h504/20200628/0436-ivrxcex0267494.jpg" alt=""></li>
+		<li class="bottom"><img src="https://mms0.baidu.com/it/u=511160269,93229767&fm=27&gp=0.jpg&fmt=auto" alt=""></li>
+		<li class="left"><img src="https://mms0.baidu.com/it/u=2302053190,1094198929&fm=15&gp=0.jpg&fmt=auto" alt=""></li>
+
+		<li class="right"><img src="https://mms0.baidu.com/it/u=682661241,829195229&fm=27&gp=0.jpg&fmt=auto" alt=""></li>
+		<li class="front"><img src="https://mms0.baidu.com/it/u=2956608424,1113367318&fm=253&app=120&f=JPEG?w=500&h=500" alt=""></li>
+		<li class="back"><img src="https://mms0.baidu.com/it/u=122340617,204605124&fm=27&gp=0.jpg&fmt=auto" alt=""></li>
+	</ul>
+
+    <script>
+
+    </script>
+</body>
+</html>

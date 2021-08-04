@@ -1,11 +1,85 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(https://www.jq22.com/demo/jquerybootstrapGrzsmoban202105240059/img/hero.jpg);
-    background-position: center center;
-    background-attachment: fixed;
+    background: #000000;
 }
 .box{
-    width: 200px;
+    width: 1000px;
+    height: 100%;
     margin: 0 auto;
+    position: relative;
+
+}
+.haer{
+    width: 1000px;
+    margin: 0 auto;
+    height: 432px;
+    background: #000 url(../images/2.jpg) no-repeat;
+    text-align: left;
+    
+}
+.box .nav{
+    position: absolute;
+    top: 365px;
+    left: 140px;
+    width: 500px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.box .nav a{
+    display: block;
+    line-height: 30px;
+    color: #707070;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.box .nav a:hover,.box .logo .logo-tex a:hover{
+    color: skyblue;
+}
+.box .logo{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.box .logo .logo-img{
+    width: 50px;
+    height: 50px;
+    background: url(../images/logo.gif) no-repeat;
+    float: left;
+}
+.box .logo .logo-tex{
+    /* float: right; */
+    margin-left: 85px;
+    width: 800px;
+    height: 50px;
+    line-height: 50px;
+}
+.box .logo .logo-tex a{
+    color: #707070;
+}
+
+.box .con{
+    width: 100%;
+}
+.box .con .con-lx{
+    height: 100%;
+    width: 500px;
+    margin: 0 20%;
+    display: flex;
+    border: 1px solid rgba(136, 136, 136, 1);
+    padding: 10px;
+
+}
+
+.box .con .con-lx a{
+    display: block;
+    width: 110px;
+    color: rgba(136, 136, 136, 1);
+    font-size: 14px;
+    text-align: right;
+
 }
