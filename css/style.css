@@ -72,6 +72,7 @@ body{
     display: flex;
     border: 1px solid rgba(136, 136, 136, 1);
     padding: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -80,6 +81,8 @@ body{
     width: 110px;
     color: rgba(136, 136, 136, 1);
     font-size: 14px;
-    text-align: right;
+    text-align: center;
+    margin-top: 10px;
+
 
 }
