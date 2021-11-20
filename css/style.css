@@ -86,3 +86,6 @@ body{
 
 
 }
+.box .con .con-lx a:hover{
+    color: rgb(31, 105, 243);
+}
