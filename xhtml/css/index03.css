@@ -1,0 +1,731 @@
+.box{
+    width: 100%;
+    height: 100px;
+}
+ 
+/* 导航条begin */
+.bigbox{
+    width: 100%;
+    height: 115px;
+}
+.navigation{
+    width: 1200px;
+    height: 115px;
+    margin: 0 auto;
+}
+.navigation .content{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding-top: 12px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.navigation .content .logo{
+    width: 132px;
+    height: 100%;
+   
+}
+.navigation .content .search{
+    width: 570px;
+    height: 100%;
+    display: flex;
+    
+}
+
+.navigation .content .search .tit{
+    width: 35px;
+    height: 100%;
+    line-height: 35px;
+    color: #666;
+    font-size: 14px;
+    margin-left: 22px;
+    position: relative;
+}
+.navigation .content .search .tit::before{
+    content: "";
+    width: 17px;
+    height: 20px;
+    background: url(../images/images01/location.png) no-repeat 0 0/cover;
+
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+
+}
+.navigation .content .search .bor{
+    width: 500px;
+    height: 35px;
+
+    /* background-color: deepskyblue; */
+    border: 2px solid deepskyblue;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.navigation .content .search .bor .tooltip{
+    width: 417px;
+    height: 100%;
+    margin-left: 45px;
+    border: none;
+    
+    
+}
+.navigation .content .search .bor .text_right{
+    width: 85px;
+    height: 100%;
+    background-color: deepskyblue;
+    font-size: 18px;
+    color: #999;
+    border: none;
+
+    
+    ;
+}
+
+.navigation .content .search .bor::before{
+    content: "";
+   
+    position: absolute;
+    left: 15px;
+    top: 10px;
+
+    background: url(../images/images01/sprites1.png) no-repeat -2px -51px;
+    width: 20px;
+	height: 18px; 
+}
+
+
+.navigation .content .content_right{
+    width: 220px;
+    height: 100%;
+    display: flex;
+    line-height: 38px;
+    justify-content: space-between;
+}
+ .bigbox .navigation .column{
+     width: 530px;
+     height: 65px;
+     line-height: 65px;
+     font-size: 18px;
+     display: flex;
+     justify-content: space-between;
+
+
+ }
+
+ /* 首选项 */
+.navigation .column>li:nth-child(2){
+    color: deepskyblue;
+    border-bottom: 2px solid deepskyblue;
+}
+/* 鼠标悬浮时, 样式改变 */
+.navigation .column>li:hover{
+    color: deepskyblue;
+    border-bottom: 2px solid deepskyblue;
+}
+
+/* 导航条end */
+
+/* 首页&lt; 找学校&lt; 广州好校 */
+.topsalver{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: white;
+   
+    }
+
+    /* 钢琴学校begin */
+    .piano{
+        width: 1200px;
+        height: 220px;
+        margin: 0 auto;
+        display: flex;
+       
+        box-shadow: 1px 1px 1px 1px #999;
+    }
+    .piano .pianoleft{
+        width: 800px;
+        height: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+
+    }
+    .piano .pianoleft>p{
+        margin-top: 5px;
+    }
+    .piano .pianoleft>p:nth-child(1){
+        font-size: 22px;
+
+    }
+    .piano .pianoleft>p:nth-child(1) span{
+        font-size: 14px;
+        color: blue;
+        padding-left: 20px;
+    }
+    .piano .pianoleft>p:nth-child(1) span:last-child::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: brown;
+        position: absolute;
+        left: 535px;
+        top: 190px;
+        background: url(../images/images03/star.png) no-repeat 0 0/20px;
+    }
+    .piano .pianoleft>p:nth-child(2){
+        color: rgb(253,196,88);
+        font-size: 18px;
+
+    }
+    .piano .pianoleft>p:nth-child(3) {
+        font-size: 14px;
+        color: #666;
+    }
+    .piano .pianoleft>p:nth-child(3) span{
+        font-size: 14px;
+        color: #999;
+    }
+    .piano .pianoleft>p:nth-child(4) {
+        font-size: 14px;
+        color: #666;
+    }
+    .piano .pianoleft>p:nth-child(4) span{
+        font-size: 14px;
+        color: #999;
+    }
+    .piano .pianoleft>p:nth-child(5) {
+        font-size: 14px;
+        color: #666;
+    }
+    .piano .pianoleft>p:nth-child(5) span{
+        font-size: 14px;
+        color: #999;
+    }
+    .piano .pianoleft>p:nth-child(6) span{
+        font-size: 14px;
+        color: #666;
+        padding-right: 45px;
+        
+    } 
+    .piano .pianoleft>p:nth-child(6) span:nth-child(1){
+        font-weight: bold;
+        color: black;
+        position: relative;
+    }
+    .piano .pianoleft>p:nth-child(6) span:nth-child(2)::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: brown;
+        position: absolute;
+        left: 460px;
+        top: 318px;
+        background: url(../images/images03/star.png) no-repeat 0 0/20px;
+    }
+
+    .piano .pianoleft>p:nth-child(6) span:nth-child(3)::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: brown;
+        position: absolute;
+        left: 535px;
+        top: 318px;
+        background: url(../images/images03/star.png) no-repeat 0 0/20px;
+    }
+
+    .piano .pianoleft>p:nth-child(6) span:nth-child(4)::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: brown;
+        position: absolute;
+        left: 635px;
+        top: 318px;
+        background: url(../images/images03/star.png) no-repeat 0 0/20px;
+    }
+
+    .piano .pianoleft>p:nth-child(6) span:nth-child(5)::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: brown;
+        position: absolute;
+        left: 745px;
+        top: 318px;
+        background: url(../images/images03/star.png) no-repeat 0 0/20px;
+    }
+
+
+    .piano .pianoleft>p:nth-child(7) span{
+        
+        font-size: 15px;
+        background-color: #FF774C;
+        padding: 0 2px;
+       
+        color: white;
+       
+        border-radius: 6px;
+    }
+
+    .piano .pianoright{
+        width: 400px;
+        height: 100%;
+
+    }
+    .piano .pianoright .pianoright_top{
+        width: 250px;
+        height: 135px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .piano .pianoright .pianoright_bot{
+        width: 250px;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+    }
+    .piano .pianoright .pianoright_bot .bot{
+        width: 80px;
+        height: 100%;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+
+    /* 钢琴学校end  */
+
+    .kongbai{
+        height: 80px;
+    }
+
+
+    /* 民师风采begin */
+    .mien{
+        width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 15px;
+        box-shadow: 1px 1px 1px 1px #999;
+    }
+    .mien .text{
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .mien .content{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .mien .content .conbox{
+        width: 350px;
+        height:100% ;
+    }
+    .mien .content .conbox .conboxp{
+        width: 100%;
+        height: 180px;
+        background: url(../images/images03/5.png) no-repeat 0 0/cover;
+
+    }
+    .mien .content .conbox .conboxp2{
+        width: 100%;
+        height: 180px;
+        background: url(../images/images03/6.png) no-repeat 0 0/cover;
+
+    }
+    .mien .content .conbox .conboxp3{
+        width: 100%;
+        height: 180px;
+        background: url(../images/images03/7.png) no-repeat 0 0/cover;
+
+    }
+    .mien .content .conbox .context{
+        text-align: center;
+    }
+    .mien .content .conbox .context>p:nth-child(1){
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .mien .content .conbox .context>p:nth-child(2){
+        font-size: 17px;
+        color: rgb(110,206,249);
+
+    }
+    .mien .content .conbox .context>p:nth-child(2) span{
+        font-size: 17px;
+        color: #999;
+
+    }
+    .mien .content .conbox .context>p:nth-child(3){
+        margin-top: 5;
+    }
+    /* 民师风采end  */
+
+    .kongbai1{
+        height: 50px;
+    }
+
+    /* 大的盒子begin */
+    .bbox{
+        width: 1200px;
+        height: 1800px;
+        /* background-color:salmon ; */
+        margin:  0 auto;
+        display: flex;
+
+    }
+    .bbox .rbox{
+        width: 800px;
+        /* height: 100%; */
+        /* background-color: seagreen; */
+    }
+    /* <!-- 课程begin --> */
+    .bbox .rbox .course{
+        width: 100%;
+        height: 350px;
+        padding: 15px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .bbox .rbox .course .text{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 28px;
+        
+    }
+
+.bbox .rbox .course .boxtext{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.bbox .rbox .course .boxtext .xbox{
+    width: 320px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bbox .rbox .course .boxtext .xbox .xbox_l{
+    width: 140px;
+    height: 120px;
+    
+    background: url(../images/images03/9.png) no-repeat 0 0/cover;
+}
+.bbox .rbox .course .boxtext .xbox .xbox_l2{
+    width: 140px;
+    height: 120px;
+   
+    background: url(../images/images03/10.png) no-repeat 0 0/cover;
+}
+.bbox .rbox .course .boxtext .xbox .xbox_l3{
+    width: 140px;
+    height: 120px;
+    
+    background: url(../images/images03/11.png) no-repeat 0 0/cover;
+}
+.bbox .rbox .course .boxtext .xbox .xbox_l4{
+    width: 140px;
+    height: 120px;
+    
+    background: url(../images/images03/12.png) no-repeat 0 0/cover;
+}
+.bbox .rbox .course .boxtext .xbox .xbox_r{
+    width: 170px;
+    height: 120px;
+    
+}
+.bbox .rbox .course .boxtext .xbox .xbox_r>p{
+    margin-top: 7px;
+}
+.bbox .rbox .course .boxtext .xbox .xbox_r>p:nth-child(1){
+    font-size: 17px;
+}
+.bbox .rbox .course .boxtext .xbox .xbox_r>p:nth-child(2){
+    font-size: 14px;
+    color: #999;
+}
+.bbox .rbox .course .boxtext .xbox .xbox_r>p:nth-child(3) span:nth-child(1){
+    font-size: 14px;
+    color: rgb(233, 29, 29);
+}
+.bbox .rbox .course .boxtext .xbox .xbox_r>p:nth-child(3) span:nth-child(2){
+    font-size: 14px;
+    color: #999;
+    text-decoration:line-through ;
+}
+
+/* 课程 end */
+
+.evaluate{
+    width: 100%;
+    /* height: 1200px; */
+    /* background-color: #FF774C; */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.evaluate .tex{
+    width: 100%;
+    height: 100px;
+    /* background-color: aquamarine; */
+
+
+}
+.evaluate .tex .tex1{
+    width: 100%;
+    height: 50px;
+    /* background-color: seagreen; */
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+
+
+}
+.evaluate .tex .tex2{
+    width: 100%;
+    height: 50px;
+    /* background-color: pink; */
+    display: flex;
+    margin-left: 20px;
+    line-height: 50px;
+    align-items: center;
+    
+}
+.evaluate .tex .tex2>p:nth-child(1){
+      display: block;
+      height: 30px;
+      width: 100px;
+      border-radius: 5px;
+      background-color: rgb(78, 149, 230);
+      text-align: center;
+      line-height: 30px;  
+}
+.evaluate .tex .tex2>p:nth-child(2){
+    padding-left: 20px;
+}
+
+.course .ping{
+    width: 100%;
+    /* height: 900px; */
+    /* background-color: aquamarine; */
+    
+}
+
+.evaluate_box{
+    width: 800px;
+    
+  
+   }
+ .evaluate_box .top{
+     height: 80px;
+     width: 735px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+.evaluate_box .top .top_left{
+    height: 80px;
+    display: flex;
+    align-items: center;
+   }
+.evaluate_box .top .top_left div:nth-child(1) img{
+     height: 40px;
+     width: 40px;
+     margin-right: 10px;
+   }
+.evaluate_box .top .top_left div:nth-child(2) p:nth-child(1){
+     font-weight: bold;
+     
+   }
+.evaluate_box .top .top_left div:nth-child(2) p:nth-child(2){
+     color: #fdc45a;
+     font-size: 18px;
+   }
+.evaluate_box .top .top_right{
+     color: #999;
+   }
+.evaluate_box .bottom{
+     margin-left: 60px;
+     text-align: justify;
+   }
+.evaluate_box .bottom .img{
+     display: flex;
+     padding-bottom: 20px;
+     border-bottom: 1px solid #e4e1e1;
+   }
+.evaluate_box .bottom div:nth-child(1){
+     font-size: 15px;
+     color: rgb(100, 99, 99);
+   }
+.evaluate_box .bottom .img div img{
+    height: 60px;
+    width: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+   }
+
+
+
+   .bottom1{
+    height:60px;
+    width: 825px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .bottom1 span:nth-child(n+1){
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    margin-left: 10px;
+  }
+  
+
+.bbox .lbox{
+    width: 350px;
+    height: 800px;
+    /* background-color: rgb(13, 14, 13); */
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.bbox .lbox .lboxtop{
+    width: 350px;
+    height: 200px;
+    background: url(../images/images03/8.png ) no-repeat 0 0/cover;
+}
+
+.bbox .lbox .lboxtop1{
+    width: 350px;
+    /* height: 600px; */
+}
+.bbox .lbox .lboxtop1 .a{
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    color: aquamarine;
+}
+.bbox .lbox .lboxtop1 .a2{
+    width: 350px;
+    height: 140px;
+    /* background-color: blueviolet; */
+}
+.bbox .lbox .lboxtop1 .a2 .pictuer{
+    width: 200px;
+    height: 75px;
+ 
+    background: url(../images/images03/13.png) no-repeat 0 0/cover;
+}
+.bbox .lbox .lboxtop1 .a2 .pictuer2{
+    width: 200px;
+    height: 75px;
+ 
+    background: url(../images/images03/14.png) no-repeat 0 0/cover;
+}
+.bbox .lbox .lboxtop1 .a2 .pictuer3{
+    width: 200px;
+    height: 75px;
+ 
+    background: url(../images/images03/16.png) no-repeat 0 0/cover;
+}
+.bbox .lbox .lboxtop1 .a2>p:nth-child(2){
+    font-weight: bold;
+}
+.bbox .lbox .lboxtop1 .a2>p:nth-child(3){
+    color: rgb(254,195,90);
+
+}
+.bbox .lbox .lboxtop1 .a2>p:nth-child(3) span{
+    color: #666;
+}
+.bbox .lbox .lboxtop1 .a2>p:last-child {
+    color: #999;
+    font-size: 12px;
+}
+
+
+/* 页脚begin */
+.footbox{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(65,65,65);
+}
+.footbox .relation{
+    width: 1200px;
+    height: 75px;
+    margin: 0 auto;
+   
+   
+}
+.footbox .relation .inrelation{
+    width:100%;
+    height: 75px;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+    
+}
+    
+.footbox .relation .inrelation .left{
+    display: flex;    
+    justify-content: space-between;
+    width: 570px;
+    height: 100%;
+    font-size: 18px;
+    color: white;
+    line-height: 75px;
+}
+    
+.footbox .relation .inrelation .right{
+    width: 290px;
+    height: 75px;
+    display: flex;
+}
+.footbox .relation .inrelation .right .r1{
+    width: 145px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: white;
+    margin-top: 15px;
+}
+.footbox .relation .inrelation .right .r2{
+    width: 145px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: white;
+    margin-top: 15px;
+}
+.footbox .relation .foottext{
+    color: white;
+    font-size: 12px;
+    height: 70px;
+    text-align: center;
+    margin-top: 17px;
+}
+
+/* 页脚end */
